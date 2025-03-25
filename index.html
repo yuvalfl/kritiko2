@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kritiko Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <div class="login-container">
+    <h1>Welcome to <span class="brand">Kritiko</span></h1>
+    <form id="login-form">
+      <label for="profile-pic" class="profile-pic-label">
+        <div class="profile-pic-circle" id="profile-pic-preview">+</div>
+      </label>
+      <input type="file" id="profile-pic" accept="image/*" hidden />
+      <input type="text" id="username" placeholder="Username" required />
+      <button type="submit" id="continue-btn" disabled>Continue</button>
+    </form>
+  </div>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
+hom

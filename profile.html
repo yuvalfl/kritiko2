@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <!-- Back to Home -->
+  <a href="home.html" id="backHomeBtn" class="back-home-button">← Home</a>
+
+  <!-- Logout Button -->
+  <button id="logoutBtn" class="logout-button">Logout</button>
+
+  <!-- Main Profile Info -->
+  <div class="profile-container">
+    <!-- Profile Picture (Clickable Label) -->
+    <label for="profilePicInput">
+      <img id="profile-pic" class="large-avatar" src="default-user.png" alt="Profile Picture" />
+    </label>
+    <input type="file" id="profilePicInput" accept="image/*" style="display: none;" />
+
+    <!-- Username and Bio -->
+    <h1 id="profile-username">@username</h1>
+    <textarea id="profile-description" placeholder="Write something about yourself..."></textarea>
+    <button id="save-description">Save</button>
+  </div>
+
+  <!-- Reviews Section -->
+  <h2>My Reviews</h2>
+  <div id="review-list"></div>
+
+  <!-- Logout Confirmation Modal -->
+  <div id="logoutModal" class="logout-modal">
+    <div class="logout-content">
+      <button class="close-logout" id="cancelLogout">×</button>
+      <p>Are you sure you want to log out?</p>
+      <button id="confirmLogout" class="confirm-logout">Log Out</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="profile.js"></script>
+</body>
+</html>

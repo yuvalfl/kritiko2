@@ -1,0 +1,157 @@
+  body {
+    background: white;
+    font-family: sans-serif;
+    padding: 2rem;
+    text-align: center;
+  }
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers all children horizontally */
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.large-avatar {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #999;
+  font-size: 5rem;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+  #profile-username {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  #profile-description {
+    width: 90%;
+    max-width: 400px;
+    height: 80px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background: #f2f2f2;
+    resize: none;
+    transition: background 0.2s ease;
+  }
+
+  #save-description {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    background: #e0e0e0;
+    border: none;
+    cursor: pointer;
+  }
+
+  #review-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .review-item {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    transition: background 0.2s ease;
+  }
+
+  .review-item:hover {
+    background: #e0e0e0;
+  }
+
+  .logout-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .logout-button:focus {
+    outline: none;
+  }
+
+  .logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .logout-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 300px;
+    width: 80%;
+    position: relative;
+  }
+
+  .confirm-logout {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+
+  .close-logout {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+.back-home-button {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+.back-home-button:focus {
+  outline: none;
+}
